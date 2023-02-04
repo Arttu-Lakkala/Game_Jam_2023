@@ -1,7 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Objects/Location.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Map_Charachter.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/Route.tscn" type="PackedScene" id=3]
+
+[sub_resource type="Curve2D" id=1]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -473, 3, 0, 0, 0, 0, -473, -390, 0, 0, 0, 0, -2, -390 )
+}
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1, -389, 0, 0, 0, 0, 306, -387, 0, 0, 0, 0, 134, -173, 0, 0, 0, 0, 339, -125, 0, 0, 0, 0, 331, 2, 0, 0, 0, 0, 12, 3 )
+}
 
 [node name="City_Map" type="Node2D"]
 
@@ -9,15 +21,39 @@
 position = Vector2( 0, 2 )
 
 [node name="Location2" parent="." instance=ExtResource( 1 )]
-position = Vector2( -3, -215 )
+position = Vector2( -6, -391 )
 
-[node name="Charahter" parent="." instance=ExtResource( 2 )]
+[node name="Charachter" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4, 3 )
 location = NodePath("../Location")
 move_speed = 100
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 8, -77 )
+position = Vector2( -6, -174 )
 current = true
 
-[editable path="Charahter"]
+[node name="Route1" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location")
+endPoint = NodePath("../Location2")
+
+[node name="Path2D" parent="Route1" index="0"]
+curve = SubResource( 1 )
+
+[node name="Route2" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location2")
+endPoint = NodePath("../Location")
+
+[node name="Path2D" parent="Route2" index="0"]
+curve = SubResource( 2 )
+
+[node name="StartPoint" parent="Route2" index="1"]
+position = Vector2( 89, -393 )
+rotation = 3.14159
+
+[node name="Endpoint" parent="Route2" index="2"]
+position = Vector2( 107, 5.00002 )
+rotation = 3.14159
+
+[editable path="Charachter"]
+[editable path="Route1"]
+[editable path="Route2"]

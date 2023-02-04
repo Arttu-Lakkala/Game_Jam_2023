@@ -15,22 +15,31 @@ export var move_speed : int
 
 onready var sprite = $AnimatedSprite
  
-func getPath(selected):
+func getPath(selected, thisBackwards):
 	location = null
 	route = selected
-	routePoints = route.curve.get_baked_points()
+	backwards = thisBackwards
+	routePoints = route.get_node("Path2D").curve.get_baked_points()
+	if backwards:
+		routeIndex = routePoints.size()-1
+	else:
+		routeIndex = 0
 	
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	#VERY TEMP
-	getPath(get_node("/root/City_Map/Location2/Route1"))
+
 
 #ADD GOING "BACKWARDS"
 func _process(delta):
 	if(routePoints):
 		#If we are going backwards
 		if backwards:
-			pass
+			target = routePoints[routeIndex]
+			if position.distance_to(target) < 1:
+				routeIndex = routeIndex - 1
+				if routeIndex == 0:
+					location = route.endPoint
+					routePoints = null
+					route = null
 		else :
 			target = routePoints[routeIndex]
 			if position.distance_to(target) < 1:
@@ -48,3 +57,4 @@ func _process(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
