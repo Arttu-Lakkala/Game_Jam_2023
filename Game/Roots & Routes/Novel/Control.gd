@@ -15,16 +15,12 @@ func _physics_process(delta):
 		get_tree().quit()
 	if active:
 		if Input.is_action_just_pressed("ui_accept"):
-			if text_done:
-				print_debug("AAAAAAAA")
-				get_tree().change_scene("res://City_Map.tscn")
+			if finished == true:
+				load_dialogue()
 			else:
-				if finished == true:
-					load_dialogue()
-				else:
-					$TextBox/Tween.stop_all()
-					$TextBox/RichTextLabel.percent_visible = 1
-					finished = true
+				$TextBox/Tween.stop_all()
+				$TextBox/RichTextLabel.percent_visible = 1
+				finished = true
 		
 		if $TextBox/Label.text == "Speaker 1":
 			$Sus1.visible = true
@@ -50,7 +46,7 @@ func load_dialogue():
 		)
 		$TextBox/Tween.start()
 	else:
-		get_tree().change_scene("res://Main_Scene.tscn")
+		get_tree().change_scene("res://City_Map.tscn")
 		
 	dialogue_index += 1
 

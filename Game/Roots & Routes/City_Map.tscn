@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Objects/Location.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Map_Charachter.tscn" type="PackedScene" id=2]
@@ -142,144 +142,109 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -139, -958, 0, 0, 0, 0, -161, -1105, 0, 0, 0, 0, -351, -944, 0, 0, 0, 0, -520, -960, 0, 0, 0, 0, -480, -735 )
 }
 
+[sub_resource type="CanvasItemMaterial" id=24]
+
 [node name="City_Map" type="Node2D"]
 position = Vector2( 505, -607 )
 script = ExtResource( 4 )
 
 [node name="Location" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 3, 8 )
 z_index = 2
 
 [node name="Location2" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -197, 429 )
 z_index = 2
 
 [node name="Location3" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -713, 307 )
 z_index = 2
 
 [node name="Location4" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -965, 192 )
 z_index = 2
 
 [node name="Location5" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -1012, -165 )
 z_index = 2
 
 [node name="Location6" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -1097, -400 )
 z_index = 2
 
 [node name="Location7" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
 self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -733, -410 )
 z_index = 2
 
 [node name="Location8" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -649, -688 )
 z_index = 2
 
 [node name="Location9" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -492, -743 )
 z_index = 2
 
 [node name="Location10" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -8, -230 )
 z_index = 2
 
 [node name="Location11" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 84, 470 )
 z_index = 2
 
 [node name="Location12" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 327, 496 )
 z_index = 2
 
 [node name="Location13" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 550, 578 )
 z_index = 2
 
 [node name="Location14" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 753, 666 )
 z_index = 2
 
 [node name="Location15" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 611, 101 )
 z_index = 2
 
 [node name="Location16" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 297, 139 )
 z_index = 2
 
 [node name="Location17" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 589, -705 )
 z_index = 2
 
 [node name="Location18" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 443, -1043 )
 z_index = 2
 
 [node name="Location19" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 250, -806 )
 z_index = 2
 
 [node name="Location20" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( 213, -1091 )
 z_index = 2
 
 [node name="Location21" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -142, -952 )
 z_index = 2
 
 [node name="Charachter" parent="." instance=ExtResource( 2 )]
-position = Vector2( 4, 3 )
+position = Vector2( 3, 7 )
 location = NodePath("../Location")
 move_speed = 400
 
 [node name="PlayerCamera" type="Camera2D" parent="Charachter"]
 position = Vector2( -4, -1 )
 current = true
+limit_left = -675
+limit_top = -1800
+limit_right = 1360
+limit_bottom = 230
 
 [node name="Route1" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location")
@@ -317,12 +282,6 @@ rotation = -1.62139
 position = Vector2( -174, 221 )
 offset = Vector2( 25, -400 )
 zoom = Vector2( 1.3, 2.3 )
-
-[node name="DraftMap1" type="Sprite" parent="."]
-position = Vector2( -161, -172 )
-scale = Vector2( 0.5, 0.5 )
-z_index = -5
-texture = ExtResource( 5 )
 
 [node name="Route 3" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location3")
@@ -638,6 +597,13 @@ rotation = 1.38558
 [node name="Endpoint" parent="Route 23" index="2"]
 position = Vector2( -502, -847 )
 rotation = 1.26656
+
+[node name="DraftMap1" type="Sprite" parent="."]
+material = SubResource( 24 )
+position = Vector2( -161, -172 )
+scale = Vector2( 0.5, 0.5 )
+z_index = -5
+texture = ExtResource( 5 )
 
 [editable path="Charachter"]
 [editable path="Route1"]
