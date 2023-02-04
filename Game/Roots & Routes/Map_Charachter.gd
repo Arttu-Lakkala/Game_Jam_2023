@@ -23,14 +23,18 @@ func _process(delta):
 		#If we are going "backwards" trough a path
 		if backwards:
 			target = routePoints[routeIndex]
-			if position.distance_to(target) < 10:
+			if position.distance_to(target) < 5:
 				routeIndex = routeIndex - 1
 				if routeIndex == 0:
 					_setLocation(route.startPoint)
 					routePoints = null
 		else :
 			target = routePoints[routeIndex]
+<<<<<<< HEAD
 			if position.distance_to(target) < 10:
+=======
+			if position.distance_to(target) < 5:
+>>>>>>> a0ba8572ea0824bc7d906d32f5f08012f6ae04e2
 				routeIndex = routeIndex + 1
 				if routeIndex == routePoints.size():
 					_setLocation(route.endPoint)

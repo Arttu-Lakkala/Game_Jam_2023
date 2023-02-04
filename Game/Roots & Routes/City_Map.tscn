@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Objects/Location.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Map_Charachter.tscn" type="PackedScene" id=2]
@@ -7,72 +7,659 @@
 [ext_resource path="res://art/draft_map1.png" type="Texture" id=5]
 
 [sub_resource type="Curve2D" id=1]
-resource_local_to_scene = true
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 0, 3, 53.9716, 57.1464, -53.9716, -57.1464, -473, 3, -66.6708, 55.559, 66.6708, -55.559, -473, -390, 0, 0, 0, 0, -2, -390 )
+"points": PoolVector2Array( 0, 0, 0, 0, 5, 13, 0, 0, 0, 0, -191, 123, 0, 0, 0, 0, -210, 266, 0, 0, 0, 0, -89, 372, 0, 0, 0, 0, -174, 422 )
 }
 
 [sub_resource type="Curve2D" id=2]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1, -389, 0, 0, 0, 0, 306, -387, 0, 0, 0, 0, 134, -173, 0, 0, 0, 0, 149, -98, 0, 0, 0, 0, 225, 2, 0, 0, 0, 0, 12, 3 )
+"points": PoolVector2Array( 0, 0, 0, 0, -196, 434, 0, 0, 0, 0, -561, 592, 0, 0, 0, 0, -520, 708, 0, 0, 0, 0, -707, 771, 0, 0, 0, 0, -701, 312 )
+}
+
+[sub_resource type="Curve2D" id=3]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -718, 306, 0, 0, 0, 0, -887, 423, 0, 0, 0, 0, -799, 549, 0, 0, 0, 0, -893, 644, 0, 0, 0, 0, -1048, 588, 0, 0, 0, 0, -1073, 277, 0, 0, 0, 0, -966, 195 )
+}
+
+[sub_resource type="Curve2D" id=4]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -960, 189, 0, 0, 0, 0, -765, 51, 0, 0, 0, 0, -815, -36, 0, 0, 0, 0, -1068, 31, 0, 0, 0, 0, -1016, -169 )
+}
+
+[sub_resource type="Curve2D" id=5]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -1010, -166, 0, 0, 0, 0, -794, -168, 0, 0, 0, 0, -858, -353, 0, 0, 0, 0, -1096, -404 )
+}
+
+[sub_resource type="Curve2D" id=6]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -1095, -405, 0, 0, 0, 0, -1006, -612, 0, 0, 0, 0, -761, -581, 0, 0, 0, 0, -733, -407 )
+}
+
+[sub_resource type="Curve2D" id=7]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -730, -403, 0, 0, 0, 0, -626, -291, 0, 0, 0, 0, -543, -396, 0, 0, 0, 0, -646, -690 )
+}
+
+[sub_resource type="Curve2D" id=8]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -648, -697, 0, 0, 0, 0, -797, -799, 0, 0, 0, 0, -705, -904, 0, 0, 0, 0, -491, -742 )
+}
+
+[sub_resource type="Curve2D" id=9]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -489, -742, 0, 0, 0, 0, -434, -607, 0, 0, 0, 0, -168, -668, 0, 0, 0, 0, -9, -236 )
+}
+
+[sub_resource type="Curve2D" id=10]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -4, -208, 0, 0, 0, 0, -164, -140, 0, 0, 0, 0, -142, -57, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 3 )
+}
+
+[sub_resource type="Curve2D" id=11]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 2, 7, 0, 0, 0, 0, 72, 195, 0, 0, 0, 0, 173, 195, 0, 0, 0, 0, 198, 369, 0, 0, 0, 0, 86, 466 )
+}
+
+[sub_resource type="Curve2D" id=12]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 86, 475, 0, 0, 0, 0, 204, 674, 0, 0, 0, 0, 311, 731, 0, 0, 0, 0, 392, 580, 0, 0, 0, 0, 334, 489 )
+}
+
+[sub_resource type="Curve2D" id=13]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 333, 496, 0, 0, 0, 0, 352, 341, 0, 0, 0, 0, 610, 432, 0, 0, 0, 0, 615, 545, 0, 0, 0, 0, 557, 583 )
+}
+
+[sub_resource type="Curve2D" id=14]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 557, 581, 0, 0, 0, 0, 545, 699, 0, 0, 0, 0, 680, 723, 0, 0, 0, 0, 756, 671 )
+}
+
+[sub_resource type="Curve2D" id=15]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 755, 663, 0, 0, 0, 0, 750, 237, 0, 0, 0, 0, 578, 178, 0, 0, 0, 0, 615, 98 )
+}
+
+[sub_resource type="Curve2D" id=16]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 615, 98, 0, 0, 0, 0, 414, 79, 0, 0, 0, 0, 300, 140 )
+}
+
+[sub_resource type="Curve2D" id=17]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 305, 137, 0, 0, 0, 0, 214, 70, 0, 0, 0, 0, 209, -24, 0, 0, 0, 0, 6, -6 )
+}
+
+[sub_resource type="Curve2D" id=18]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 615, 87, 0, 0, 0, 0, 638, -454, 0, 0, 0, 0, 588, -711 )
+}
+
+[sub_resource type="Curve2D" id=19]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 593, -708, 0, 0, 0, 0, 754, -748, 0, 0, 0, 0, 707, -1092, 0, 0, 0, 0, 451, -1054 )
+}
+
+[sub_resource type="Curve2D" id=20]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 444, -1051, 0, 0, 0, 0, 410, -804, 0, 0, 0, 0, 250, -804 )
+}
+
+[sub_resource type="Curve2D" id=21]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 259, -804, 0, 0, 0, 0, 298, -615, 0, 0, 0, 0, 136, -647, 0, 0, 0, 0, 223, -1096 )
+}
+
+[sub_resource type="Curve2D" id=22]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 218, -1092, 0, 0, 0, 0, 47, -1076, 0, 0, 0, 0, 72, -987, 0, 0, 0, 0, 31, -884, 0, 0, 0, 0, -133, -953 )
+}
+
+[sub_resource type="Curve2D" id=23]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -139, -958, 0, 0, 0, 0, -161, -1105, 0, 0, 0, 0, -351, -944, 0, 0, 0, 0, -520, -960, 0, 0, 0, 0, -480, -735 )
 }
 
 [node name="City_Map" type="Node2D"]
-position = Vector2( 533, -366 )
+position = Vector2( 505, -607 )
 script = ExtResource( 4 )
-
-[node name="Location2" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
-self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
-position = Vector2( 0, 2 )
-z_index = 2
 
 [node name="Location" parent="." instance=ExtResource( 1 )]
 modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
 self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
-position = Vector2( -6, -392 )
+position = Vector2( 3, 8 )
+z_index = 2
+
+[node name="Location2" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -197, 429 )
+z_index = 2
+
+[node name="Location3" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -713, 307 )
+z_index = 2
+
+[node name="Location4" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -965, 192 )
+z_index = 2
+
+[node name="Location5" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -1012, -165 )
+z_index = 2
+
+[node name="Location6" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -1097, -400 )
+z_index = 2
+
+[node name="Location7" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -733, -410 )
+z_index = 2
+
+[node name="Location8" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -649, -688 )
+z_index = 2
+
+[node name="Location9" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -492, -743 )
+z_index = 2
+
+[node name="Location10" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -8, -230 )
+z_index = 2
+
+[node name="Location11" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 84, 470 )
+z_index = 2
+
+[node name="Location12" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 327, 496 )
+z_index = 2
+
+[node name="Location13" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 550, 578 )
+z_index = 2
+
+[node name="Location14" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 753, 666 )
+z_index = 2
+
+[node name="Location15" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 611, 101 )
+z_index = 2
+
+[node name="Location16" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 297, 139 )
+z_index = 2
+
+[node name="Location17" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 589, -705 )
+z_index = 2
+
+[node name="Location18" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 443, -1043 )
+z_index = 2
+
+[node name="Location19" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 250, -806 )
+z_index = 2
+
+[node name="Location20" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( 213, -1091 )
+z_index = 2
+
+[node name="Location21" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.87451, 0.0941176, 0.0941176, 1 )
+self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
+position = Vector2( -142, -952 )
 z_index = 2
 
 [node name="Charachter" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4, 3 )
 location = NodePath("../Location")
-move_speed = 100
+move_speed = 400
 
 [node name="PlayerCamera" type="Camera2D" parent="Charachter"]
 position = Vector2( -4, -1 )
 current = true
 
 [node name="Route1" parent="." instance=ExtResource( 3 )]
-startPoint = NodePath("../Location2")
-endPoint = NodePath("../Location")
-
-[node name="Path2D" parent="Route1" index="0"]
-curve = SubResource( 1 )
-
-[node name="Route2" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location")
 endPoint = NodePath("../Location2")
 
+[node name="Path2D" parent="Route1" index="0"]
+position = Vector2( 2, -2 )
+curve = SubResource( 1 )
+
+[node name="StartPoint" parent="Route1" index="1"]
+position = Vector2( -90, 67 )
+rotation = -0.603579
+
+[node name="Endpoint" parent="Route1" index="2"]
+position = Vector2( -105, 378 )
+rotation = 2.587
+
+[node name="Route2" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location2")
+endPoint = NodePath("../Location3")
+
 [node name="Path2D" parent="Route2" index="0"]
+position = Vector2( 0, 0 )
 curve = SubResource( 2 )
 
 [node name="StartPoint" parent="Route2" index="1"]
-position = Vector2( 89, -393 )
-rotation = 3.14159
+position = Vector2( -300, 470 )
+rotation = -0.349949
 
 [node name="Endpoint" parent="Route2" index="2"]
-position = Vector2( 107, 4 )
-rotation = 3.14159
+position = Vector2( -696, 411 )
+rotation = -1.62139
 
 [node name="FullViewCamera" type="Camera2D" parent="."]
-position = Vector2( -148, 189 )
+position = Vector2( -174, 221 )
+offset = Vector2( 25, -400 )
+zoom = Vector2( 1.3, 2.3 )
 
 [node name="DraftMap1" type="Sprite" parent="."]
-position = Vector2( -145, -181 )
+position = Vector2( -161, -172 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -5
 texture = ExtResource( 5 )
 
+[node name="Route 3" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location3")
+endPoint = NodePath("../Location4")
+
+[node name="Path2D" parent="Route 3" index="0"]
+position = Vector2( 0, 0 )
+curve = SubResource( 3 )
+
+[node name="StartPoint" parent="Route 3" index="1"]
+position = Vector2( -801, 352 )
+rotation = -0.567181
+
+[node name="Endpoint" parent="Route 3" index="2"]
+position = Vector2( -1045, 255 )
+rotation = 5.64849
+
+[node name="Route 4" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location4")
+endPoint = NodePath("../Location5")
+
+[node name="Path2D" parent="Route 4" index="0"]
+curve = SubResource( 4 )
+
+[node name="StartPoint" parent="Route 4" index="1"]
+position = Vector2( -879, 133 )
+rotation = 2.48009
+
+[node name="Endpoint" parent="Route 4" index="2"]
+position = Vector2( -1046, -70 )
+rotation = -1.27592
+
+[node name="Route 5" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location5")
+endPoint = NodePath("../Location6")
+
+[node name="Path2D" parent="Route 5" index="0"]
+curve = SubResource( 5 )
+
+[node name="StartPoint" parent="Route 5" index="1"]
+position = Vector2( -904, -161 )
+rotation = -3.05691
+
+[node name="Endpoint" parent="Route 5" index="2"]
+position = Vector2( -995, -379 )
+rotation = -2.96727
+
+[node name="Route 6" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location6")
+endPoint = NodePath("../Location7")
+
+[node name="Path2D" parent="Route 6" index="0"]
+curve = SubResource( 6 )
+
+[node name="StartPoint" parent="Route 6" index="1"]
+position = Vector2( -1065, -497 )
+rotation = 1.94052
+
+[node name="Endpoint" parent="Route 6" index="2"]
+position = Vector2( -755, -513 )
+rotation = -4.85088
+
+[node name="Route 7" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location7")
+endPoint = NodePath("../Location8")
+
+[node name="Path2D" parent="Route 7" index="0"]
+curve = SubResource( 7 )
+
+[node name="StartPoint" parent="Route 7" index="1"]
+position = Vector2( -666, -329 )
+rotation = -2.36857
+
+[node name="Endpoint" parent="Route 7" index="2"]
+position = Vector2( -613, -590 )
+rotation = -1.82456
+
+[node name="Route 8" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location8")
+endPoint = NodePath("../Location9")
+
+[node name="Path2D" parent="Route 8" index="0"]
+curve = SubResource( 8 )
+
+[node name="StartPoint" parent="Route 8" index="1"]
+position = Vector2( -726, -743 )
+rotation = -5.75959
+
+[node name="Endpoint" parent="Route 8" index="2"]
+position = Vector2( -576, -809 )
+rotation = -5.62899
+
+[node name="Route 9" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location9")
+endPoint = NodePath("../Location10")
+
+[node name="Path2D" parent="Route 9" index="0"]
+curve = SubResource( 9 )
+
+[node name="StartPoint" parent="Route 9" index="1"]
+position = Vector2( -449, -649 )
+rotation = -1.98076
+
+[node name="Endpoint" parent="Route 9" index="2"]
+position = Vector2( -56, -328 )
+rotation = 1.0915
+
+[node name="Route 10" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location10")
+endPoint = NodePath("../Location")
+
+[node name="Path2D" parent="Route 10" index="0"]
+curve = SubResource( 10 )
+
+[node name="StartPoint" parent="Route 10" index="1"]
+position = Vector2( -92, -164 )
+rotation = -0.511625
+
+[node name="Endpoint" parent="Route 10" index="2"]
+position = Vector2( -94, -51 )
+rotation = 0.532924
+
+[node name="Route 11" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location")
+endPoint = NodePath("../Location11")
+
+[node name="Path2D" parent="Route 11" index="0"]
+curve = SubResource( 11 )
+
+[node name="StartPoint" parent="Route 11" index="1"]
+position = Vector2( 37, 110 )
+rotation = -1.89444
+
+[node name="Endpoint" parent="Route 11" index="2"]
+position = Vector2( 163, 390 )
+rotation = 2.34126
+
+[node name="Route 12" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location11")
+endPoint = NodePath("../Location12")
+
+[node name="Path2D" parent="Route 12" index="0"]
+curve = SubResource( 12 )
+
+[node name="StartPoint" parent="Route 12" index="1"]
+position = Vector2( 136, 567 )
+rotation = -2.10156
+
+[node name="Endpoint" parent="Route 12" index="2"]
+position = Vector2( 403, 572 )
+rotation = 3.88482
+
+[node name="Route 13" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location12")
+endPoint = NodePath("../Location13")
+
+[node name="Path2D" parent="Route 13" index="0"]
+curve = SubResource( 13 )
+
+[node name="StartPoint" parent="Route 13" index="1"]
+position = Vector2( 344, 394 )
+rotation = 1.70177
+
+[node name="Endpoint" parent="Route 13" index="2"]
+position = Vector2( 637, 527 )
+rotation = -3.67209
+
+[node name="Route 14" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location13")
+endPoint = NodePath("../Location14")
+
+[node name="Path2D" parent="Route 14" index="0"]
+curve = SubResource( 14 )
+
+[node name="StartPoint" parent="Route 14" index="1"]
+position = Vector2( 543, 676 )
+rotation = -1.50689
+
+[node name="Endpoint" parent="Route 14" index="2"]
+position = Vector2( 674, 731 )
+rotation = -0.706006
+
+[node name="Route 15" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location14")
+endPoint = NodePath("../Location15")
+
+[node name="Path2D" parent="Route 15" index="0"]
+curve = SubResource( 15 )
+
+[node name="StartPoint" parent="Route 15" index="1"]
+position = Vector2( 748, 564 )
+rotation = 1.52623
+
+[node name="Endpoint" parent="Route 15" index="2"]
+position = Vector2( 563, 193 )
+rotation = -1.02265
+
+[node name="Route 16" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location15")
+endPoint = NodePath("../Location16")
+
+[node name="Path2D" parent="Route 16" index="0"]
+curve = SubResource( 16 )
+
+[node name="StartPoint" parent="Route 16" index="1"]
+position = Vector2( 507, 88 )
+
+[node name="Endpoint" parent="Route 16" index="2"]
+position = Vector2( 394, 90 )
+rotation = 2.6243
+
+[node name="Route 17" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location16")
+endPoint = NodePath("../Location")
+
+[node name="Path2D" parent="Route 17" index="0"]
+curve = SubResource( 17 )
+
+[node name="StartPoint" parent="Route 17" index="1"]
+position = Vector2( 213, 81 )
+rotation = 0.528919
+
+[node name="Endpoint" parent="Route 17" index="2"]
+position = Vector2( 107, -15 )
+rotation = 3.02798
+
+[node name="Route 18" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location15")
+endPoint = NodePath("../Location17")
+
+[node name="Path2D" parent="Route 18" index="0"]
+curve = SubResource( 18 )
+
+[node name="StartPoint" parent="Route 18" index="1"]
+position = Vector2( 611, -11 )
+rotation = 1.49784
+
+[node name="Endpoint" parent="Route 18" index="2"]
+position = Vector2( 608, -597 )
+rotation = -1.72049
+
+[node name="Route 19" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location17")
+endPoint = NodePath("../Location18")
+
+[node name="Path2D" parent="Route 19" index="0"]
+curve = SubResource( 19 )
+
+[node name="StartPoint" parent="Route 19" index="1"]
+position = Vector2( 690, -741 )
+rotation = 2.75185
+
+[node name="Endpoint" parent="Route 19" index="2"]
+position = Vector2( 544, -1082 )
+rotation = 2.82978
+
+[node name="Route 20" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location18")
+endPoint = NodePath("../Location19")
+
+[node name="Path2D" parent="Route 20" index="0"]
+curve = SubResource( 20 )
+
+[node name="StartPoint" parent="Route 20" index="1"]
+position = Vector2( 435, -943 )
+rotation = -1.45256
+
+[node name="Endpoint" parent="Route 20" index="2"]
+position = Vector2( 364, -806 )
+rotation = -3.06212
+
+[node name="Route 21" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location19")
+endPoint = NodePath("../Location20")
+
+[node name="Path2D" parent="Route 21" index="0"]
+curve = SubResource( 21 )
+
+[node name="StartPoint" parent="Route 21" index="1"]
+position = Vector2( 276, -702 )
+rotation = -1.80184
+
+[node name="Endpoint" parent="Route 21" index="2"]
+position = Vector2( 202, -986 )
+rotation = -1.34504
+
+[node name="Route 22" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location20")
+endPoint = NodePath("../Location21")
+
+[node name="Path2D" parent="Route 22" index="0"]
+curve = SubResource( 22 )
+
+[node name="StartPoint" parent="Route 22" index="1"]
+position = Vector2( 112, -1088 )
+rotation = -0.0654618
+
+[node name="Endpoint" parent="Route 22" index="2"]
+position = Vector2( -49.0001, -905 )
+rotation = -2.76528
+
+[node name="Route 23" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location21")
+endPoint = NodePath("../Location9")
+
+[node name="Path2D" parent="Route 23" index="0"]
+curve = SubResource( 23 )
+
+[node name="StartPoint" parent="Route 23" index="1"]
+position = Vector2( -155, -1057 )
+rotation = 1.38558
+
+[node name="Endpoint" parent="Route 23" index="2"]
+position = Vector2( -502, -847 )
+rotation = 1.26656
+
 [editable path="Charachter"]
 [editable path="Route1"]
 [editable path="Route2"]
+[editable path="Route 3"]
+[editable path="Route 4"]
+[editable path="Route 5"]
+[editable path="Route 6"]
+[editable path="Route 7"]
+[editable path="Route 8"]
+[editable path="Route 9"]
+[editable path="Route 10"]
+[editable path="Route 11"]
+[editable path="Route 12"]
+[editable path="Route 13"]
+[editable path="Route 14"]
+[editable path="Route 15"]
+[editable path="Route 16"]
+[editable path="Route 17"]
+[editable path="Route 18"]
+[editable path="Route 19"]
+[editable path="Route 20"]
+[editable path="Route 21"]
+[editable path="Route 22"]
+[editable path="Route 23"]
