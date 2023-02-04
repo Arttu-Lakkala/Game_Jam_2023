@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Objects/Location.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Map_Charachter.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Novel/CormorantGaramond-Bold.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://SFXplayer.tscn" type="PackedScene" id=7]
 [ext_resource path="res://AudioPlayer.tscn" type="PackedScene" id=8]
+[ext_resource path="res://CanvasLayer.gd" type="Script" id=9]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -271,10 +272,10 @@ position = Vector2( -360, -940 )
 z_index = 2
 
 [node name="Charachter" parent="." instance=ExtResource( 2 )]
-position = Vector2( 606, 440 )
+position = Vector2( 3, 6 )
 z_index = 50
 location = NodePath("../HOME")
-move_speed = 100
+move_speed = 400
 
 [node name="PlayerCamera" type="Camera2D" parent="Charachter"]
 position = Vector2( -4, -1 )
@@ -654,6 +655,7 @@ z_index = -5
 texture = ExtResource( 5 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 9 )
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 custom_colors/font_color = Color( 1, 1, 0, 1 )

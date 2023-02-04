@@ -22,14 +22,12 @@ func _physics_process(delta):
 				$TextBox/RichTextLabel.percent_visible = 1
 				finished = true
 		
-		#Charachter selection
-		if $TextBox/Label.text == "Speaker 1":
-			$Sus1.visible = true
-			$Sus2.visible = false
-			
-		elif $TextBox/Label.text == "Speaker 2":
-			$Sus1.visible = false
-			$Sus2.visible = true
+		#Charachter selectio
+		if $OfficeWorker != null:
+			if $TextBox/Label.text == "Officer":
+				$OfficeWorker.visible = true
+			else:
+				$OfficeWorker.visible = false
 
 func load_dialogue():
 	if dialogue_index < text.size():
@@ -47,7 +45,14 @@ func load_dialogue():
 		)
 		$TextBox/Tween.start()
 	else:
-		get_tree().change_scene("res://City_Map.tscn")
+		SceneSave.novel_active = false
+		if SceneSave.phase == 0:
+			get_tree().change_scene("res://City_Map.tscn")
+		elif SceneSave.phase == 10:
+			get_tree().quit()
+		else:
+			get_node("/root/City_Map").new_scene.queue_free()
+			
 		
 	dialogue_index += 1
 
