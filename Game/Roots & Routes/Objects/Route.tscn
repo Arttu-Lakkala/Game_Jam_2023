@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Objects/PathInteractable.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Route.gd" type="Script" id=2]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, -473, 3, 0, 0, 0, 0, -473, -390, 0, 0, 0, 0, -2, -390 )
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2( -2, 2 )
+curve = SubResource( 1 )
+
+[node name="StartPoint" parent="." instance=ExtResource( 1 )]
+position = Vector2( -98, 4 )
+scale = Vector2( 0.2, 0.2 )
+
+[node name="Endpoint" parent="." instance=ExtResource( 1 )]
+position = Vector2( -102, -388 )
+scale = Vector2( 0.2, 0.2 )
+
+[connection signal="input_event" from="StartPoint" to="." method="_on_StartPoint_input_event"]
+[connection signal="input_event" from="Endpoint" to="." method="_on_Endpoint_input_event"]
