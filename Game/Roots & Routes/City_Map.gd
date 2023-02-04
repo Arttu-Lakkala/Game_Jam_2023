@@ -8,7 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_node("Charachter")._setLocation(get_node("Location"))
+	get_node("Charachter")._setLocation(get_node("PLAZA1"))
 
 
 func _process(delta):

@@ -2,7 +2,6 @@ extends KinematicBody2D
 
 signal shoutLocation(location)
 # Declare member variables here. Examples:
-var moving = false
 var backwards = false
 var routePoints
 var routeIndex = 0
@@ -48,6 +47,7 @@ func _setLocation(currentLocation):
 	velocity = Vector2.ZERO
 	route = null
 	location.visible = true
+	get_node("../SFX").mute_movement_sound()
 	emit_signal("shoutLocation", currentLocation)
 
 #Function for getting a path
@@ -60,6 +60,7 @@ func getPath(selected, thisBackwards):
 		routeIndex = routePoints.size()-1
 	else:
 		routeIndex = 0
+	get_node("../SFX").play_movement_sound()
 	emit_signal("shoutLocation", null)
 	
 
