@@ -3,6 +3,7 @@
 [ext_resource path="res://PathInteractable.gd" type="Script" id=1]
 
 [node name="PathInteractable" type="Area2D"]
+visible = false
 z_index = 100
 script = ExtResource( 1 )
 

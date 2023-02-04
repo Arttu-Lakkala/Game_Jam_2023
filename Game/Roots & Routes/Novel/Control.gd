@@ -22,11 +22,12 @@ func _physics_process(delta):
 				$TextBox/RichTextLabel.percent_visible = 1
 				finished = true
 		
+		#Charachter selection
 		if $TextBox/Label.text == "Speaker 1":
 			$Sus1.visible = true
 			$Sus2.visible = false
 			
-		if $TextBox/Label.text == "Speaker 2":
+		elif $TextBox/Label.text == "Speaker 2":
 			$Sus1.visible = false
 			$Sus2.visible = true
 

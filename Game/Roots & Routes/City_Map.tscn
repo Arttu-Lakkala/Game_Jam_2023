@@ -1,10 +1,11 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Objects/Location.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Map_Charachter.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objects/Route.tscn" type="PackedScene" id=3]
 [ext_resource path="res://City_Map.gd" type="Script" id=4]
 [ext_resource path="res://art/draft_map1.png" type="Texture" id=5]
+[ext_resource path="res://Novel/CormorantGaramond-Bold.ttf" type="DynamicFontData" id=6]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -79,13 +80,13 @@ _data = {
 [sub_resource type="Curve2D" id=13]
 resource_local_to_scene = true
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 333, 496, 0, 0, 0, 0, 352, 341, 0, 0, 0, 0, 610, 432, 0, 0, 0, 0, 615, 545, 0, 0, 0, 0, 557, 583 )
+"points": PoolVector2Array( 0, 0, 0, 0, 333, 496, 0, 0, 0, 0, 352, 341, 0, 0, 0, 0, 610, 432 )
 }
 
 [sub_resource type="Curve2D" id=14]
 resource_local_to_scene = true
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 557, 581, 0, 0, 0, 0, 545, 699, 0, 0, 0, 0, 680, 723, 0, 0, 0, 0, 756, 671 )
+"points": PoolVector2Array( 0, 0, 0, 0, 617, 437, 0, 0, 0, 0, 611, 543, 0, 0, 0, 0, 546, 586, 0, 0, 0, 0, 546, 696, 0, 0, 0, 0, 660, 721, 0, 0, 0, 0, 744, 677 )
 }
 
 [sub_resource type="Curve2D" id=15]
@@ -133,109 +134,143 @@ _data = {
 [sub_resource type="Curve2D" id=22]
 resource_local_to_scene = true
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 218, -1092, 0, 0, 0, 0, 47, -1076, 0, 0, 0, 0, 72, -987, 0, 0, 0, 0, 31, -884, 0, 0, 0, 0, -133, -953 )
+"points": PoolVector2Array( 0, 0, 0, 0, 218, -1092, 0, 0, 0, 0, 47, -1076, 0, 0, 0, 0, 72, -987, 0, 0, 0, 0, 31, -884 )
 }
 
 [sub_resource type="Curve2D" id=23]
 resource_local_to_scene = true
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -139, -958, 0, 0, 0, 0, -161, -1105, 0, 0, 0, 0, -351, -944, 0, 0, 0, 0, -520, -960, 0, 0, 0, 0, -480, -735 )
+"points": PoolVector2Array( 0, 0, 0, 0, 23, -883, 0, 0, 0, 0, -137, -946, 0, 0, 0, 0, -163, -1109, 0, 0, 0, 0, -346, -954 )
 }
 
-[sub_resource type="CanvasItemMaterial" id=24]
+[sub_resource type="Curve2D" id=26]
+resource_local_to_scene = true
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -158, -426, 0, 0, 0, 0, -190, -560, 0, 0, 0, 0, -190, -630, 0, 0, 0, 0, -62, -612 )
+}
+
+[sub_resource type="DynamicFont" id=25]
+size = 75
+font_data = ExtResource( 6 )
 
 [node name="City_Map" type="Node2D"]
 position = Vector2( 505, -607 )
 script = ExtResource( 4 )
 
-[node name="Location" parent="." instance=ExtResource( 1 )]
+[node name="HOME" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 3, 8 )
 z_index = 2
 
+[node name="PLAZA1" parent="." instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 608, 442 )
+z_index = 2
+
+[node name="PLAZA2" parent="." instance=ExtResource( 1 )]
+visible = true
+position = Vector2( 24, -882 )
+z_index = 2
+
+[node name="PLAZA3" parent="." instance=ExtResource( 1 )]
+visible = true
+position = Vector2( -965, 192 )
+z_index = 2
+
 [node name="Location2" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -197, 429 )
 z_index = 2
 
 [node name="Location3" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -713, 307 )
 z_index = 2
 
-[node name="Location4" parent="." instance=ExtResource( 1 )]
-position = Vector2( -965, 192 )
-z_index = 2
-
 [node name="Location5" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -1012, -165 )
 z_index = 2
 
 [node name="Location6" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -1097, -400 )
 z_index = 2
 
 [node name="Location7" parent="." instance=ExtResource( 1 )]
+visible = true
 self_modulate = Color( 0.890196, 0.0745098, 0.0745098, 1 )
 position = Vector2( -733, -410 )
 z_index = 2
 
 [node name="Location8" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -649, -688 )
 z_index = 2
 
 [node name="Location9" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -492, -743 )
 z_index = 2
 
 [node name="Location10" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -8, -230 )
 z_index = 2
 
 [node name="Location11" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 84, 470 )
 z_index = 2
 
 [node name="Location12" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 327, 496 )
 z_index = 2
 
-[node name="Location13" parent="." instance=ExtResource( 1 )]
-position = Vector2( 550, 578 )
-z_index = 2
-
 [node name="Location14" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 753, 666 )
 z_index = 2
 
 [node name="Location15" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 611, 101 )
 z_index = 2
 
 [node name="Location16" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 297, 139 )
 z_index = 2
 
 [node name="Location17" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 589, -705 )
 z_index = 2
 
 [node name="Location18" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 443, -1043 )
 z_index = 2
 
 [node name="Location19" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 250, -806 )
 z_index = 2
 
 [node name="Location20" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( 213, -1091 )
 z_index = 2
 
-[node name="Location21" parent="." instance=ExtResource( 1 )]
-position = Vector2( -142, -952 )
+[node name="Location22" parent="." instance=ExtResource( 1 )]
+visible = true
+position = Vector2( -360, -940 )
 z_index = 2
 
 [node name="Charachter" parent="." instance=ExtResource( 2 )]
 position = Vector2( 3, 7 )
-location = NodePath("../Location")
+location = NodePath("../HOME")
 move_speed = 400
 
 [node name="PlayerCamera" type="Camera2D" parent="Charachter"]
@@ -247,7 +282,7 @@ limit_right = 1360
 limit_bottom = 230
 
 [node name="Route1" parent="." instance=ExtResource( 3 )]
-startPoint = NodePath("../Location")
+startPoint = NodePath("../HOME")
 endPoint = NodePath("../Location2")
 
 [node name="Path2D" parent="Route1" index="0"]
@@ -278,14 +313,9 @@ rotation = -0.349949
 position = Vector2( -696, 411 )
 rotation = -1.62139
 
-[node name="FullViewCamera" type="Camera2D" parent="."]
-position = Vector2( -174, 221 )
-offset = Vector2( 25, -400 )
-zoom = Vector2( 1.3, 2.3 )
-
 [node name="Route 3" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location3")
-endPoint = NodePath("../Location4")
+endPoint = NodePath("../PLAZA3")
 
 [node name="Path2D" parent="Route 3" index="0"]
 position = Vector2( 0, 0 )
@@ -300,7 +330,7 @@ position = Vector2( -1045, 255 )
 rotation = 5.64849
 
 [node name="Route 4" parent="." instance=ExtResource( 3 )]
-startPoint = NodePath("../Location4")
+startPoint = NodePath("../PLAZA3")
 endPoint = NodePath("../Location5")
 
 [node name="Path2D" parent="Route 4" index="0"]
@@ -391,7 +421,7 @@ rotation = 1.0915
 
 [node name="Route 10" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location10")
-endPoint = NodePath("../Location")
+endPoint = NodePath("../HOME")
 
 [node name="Path2D" parent="Route 10" index="0"]
 curve = SubResource( 10 )
@@ -405,7 +435,7 @@ position = Vector2( -94, -51 )
 rotation = 0.532924
 
 [node name="Route 11" parent="." instance=ExtResource( 3 )]
-startPoint = NodePath("../Location")
+startPoint = NodePath("../HOME")
 endPoint = NodePath("../Location11")
 
 [node name="Path2D" parent="Route 11" index="0"]
@@ -431,12 +461,12 @@ position = Vector2( 136, 567 )
 rotation = -2.10156
 
 [node name="Endpoint" parent="Route 12" index="2"]
-position = Vector2( 403, 572 )
-rotation = 3.88482
+position = Vector2( 392, 582 )
+rotation = 4.25331
 
 [node name="Route 13" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location12")
-endPoint = NodePath("../Location13")
+endPoint = NodePath("../PLAZA1")
 
 [node name="Path2D" parent="Route 13" index="0"]
 curve = SubResource( 13 )
@@ -446,22 +476,22 @@ position = Vector2( 344, 394 )
 rotation = 1.70177
 
 [node name="Endpoint" parent="Route 13" index="2"]
-position = Vector2( 637, 527 )
-rotation = -3.67209
+position = Vector2( 529, 403 )
+rotation = -5.88938
 
 [node name="Route 14" parent="." instance=ExtResource( 3 )]
-startPoint = NodePath("../Location13")
+startPoint = NodePath("../PLAZA1")
 endPoint = NodePath("../Location14")
 
 [node name="Path2D" parent="Route 14" index="0"]
 curve = SubResource( 14 )
 
 [node name="StartPoint" parent="Route 14" index="1"]
-position = Vector2( 543, 676 )
+position = Vector2( 606, 533 )
 rotation = -1.50689
 
 [node name="Endpoint" parent="Route 14" index="2"]
-position = Vector2( 674, 731 )
+position = Vector2( 684, 712 )
 rotation = -0.706006
 
 [node name="Route 15" parent="." instance=ExtResource( 3 )]
@@ -495,7 +525,7 @@ rotation = 2.6243
 
 [node name="Route 17" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location16")
-endPoint = NodePath("../Location")
+endPoint = NodePath("../HOME")
 
 [node name="Path2D" parent="Route 17" index="0"]
 curve = SubResource( 17 )
@@ -570,7 +600,7 @@ rotation = -1.34504
 
 [node name="Route 22" parent="." instance=ExtResource( 3 )]
 startPoint = NodePath("../Location20")
-endPoint = NodePath("../Location21")
+endPoint = NodePath("../PLAZA2")
 
 [node name="Path2D" parent="Route 22" index="0"]
 curve = SubResource( 22 )
@@ -580,30 +610,63 @@ position = Vector2( 112, -1088 )
 rotation = -0.0654618
 
 [node name="Endpoint" parent="Route 22" index="2"]
-position = Vector2( -49.0001, -905 )
-rotation = -2.76528
+position = Vector2( 67, -963 )
+rotation = -4.28072
 
 [node name="Route 23" parent="." instance=ExtResource( 3 )]
-startPoint = NodePath("../Location21")
-endPoint = NodePath("../Location9")
+startPoint = NodePath("../PLAZA2")
+endPoint = NodePath("../Location22")
 
 [node name="Path2D" parent="Route 23" index="0"]
 curve = SubResource( 23 )
 
 [node name="StartPoint" parent="Route 23" index="1"]
-position = Vector2( -155, -1057 )
-rotation = 1.38558
+position = Vector2( -59.9999, -922 )
+rotation = 0.431993
 
 [node name="Endpoint" parent="Route 23" index="2"]
-position = Vector2( -502, -847 )
-rotation = 1.26656
+position = Vector2( -294, -998 )
+rotation = 2.40612
+
+[node name="Route 24" parent="." instance=ExtResource( 3 )]
+startPoint = NodePath("../Location22")
+endPoint = NodePath("../Location9")
+
+[node name="Path2D" parent="Route 24" index="0"]
+position = Vector2( -320, -328 )
+curve = SubResource( 26 )
+
+[node name="StartPoint" parent="Route 24" index="1"]
+position = Vector2( -434, -947 )
+rotation = 0.263237
+
+[node name="Endpoint" parent="Route 24" index="2"]
+position = Vector2( -499, -840 )
+rotation = 1.33977
 
 [node name="DraftMap1" type="Sprite" parent="."]
-material = SubResource( 24 )
 position = Vector2( -161, -172 )
 scale = Vector2( 0.5, 0.5 )
 z_index = -5
 texture = ExtResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+custom_fonts/font = SubResource( 25 )
+text = "Hold Space to see the city"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+margin_top = 750.0
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+custom_fonts/font = SubResource( 25 )
+text = "Press Enter to visit a building"
+
+[node name="FullViewCamera" type="Camera2D" parent="."]
+position = Vector2( -174, 221 )
+offset = Vector2( 25, -400 )
+zoom = Vector2( 1.3, 2.3 )
 
 [editable path="Charachter"]
 [editable path="Route1"]
@@ -629,3 +692,4 @@ texture = ExtResource( 5 )
 [editable path="Route 21"]
 [editable path="Route 22"]
 [editable path="Route 23"]
+[editable path="Route 24"]

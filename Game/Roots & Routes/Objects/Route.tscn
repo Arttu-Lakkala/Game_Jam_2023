@@ -18,10 +18,12 @@ position = Vector2( -2, 2 )
 curve = SubResource( 1 )
 
 [node name="StartPoint" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -98, 4 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Endpoint" parent="." instance=ExtResource( 1 )]
+visible = true
 position = Vector2( -102, -388 )
 scale = Vector2( 0.2, 0.2 )
 

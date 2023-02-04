@@ -47,6 +47,7 @@ func _setLocation(currentLocation):
 	location = currentLocation
 	velocity = Vector2.ZERO
 	route = null
+	location.visible = true
 	emit_signal("shoutLocation", currentLocation)
 
 #Function for getting a path
