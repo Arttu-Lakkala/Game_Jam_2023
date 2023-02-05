@@ -91,6 +91,5 @@ var dialogue_1 = [
 },{
 "Name": "",
 "Text": "Alright. Time to find your way to the campus."
-},{
 }
 ]
