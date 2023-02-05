@@ -29,6 +29,11 @@ func _physics_process(delta):
 			else:
 				$OfficeWorker.visible = false
 
+		if $Roommate != null:
+			if ($TextBox/Label.text == "Roommate" || $TextBox/Label.text == "Eli"):
+				$Roommate.visible = true
+			else:
+				$Roommate.visible = false
 func load_dialogue():
 	if dialogue_index < text.size():
 		active = true
